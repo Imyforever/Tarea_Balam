@@ -1,0 +1,238 @@
+body {
+    background: linear-gradient(0deg, rgb(125, 200, 250), rgb(197, 212, 255));
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo {
+    margin-top: 0.5%;
+    margin-left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Logo {
+    width: 100%;
+    height: 100%;
+}
+#Header {
+    outline: 2px solid black;
+    width: auto;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #107acc;
+    display: flex;
+}
+/* Menu izquierdo */
+:root {
+    --main-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+html{
+    overflow-y: scroll;
+}
+.main-header {
+    width: 100%;
+    height: 50px;
+}
+#img-menu {
+    width: 100%;
+}
+label.btn-nav {
+    margin-top: .2%;
+    background-color: #107acc;
+    width: 5%;
+}
+
+label.btn-nav:hover {
+    background-color: #0f74c1;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    top: 82px;
+    height: calc(100vh - 50px);
+    background: aliceblue;
+    transform: translateX(-100%);
+    transition: 0.8s ease;
+    outline: 2px solid black;
+}
+.navigation li {
+    height: auto;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navigation a {
+    color: var(--main-color);
+    display: block;
+    line-height: 3.5;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+a{
+    text-decoration: none;  
+}
+.navigation a:hover {
+    transform: translateX(5%);
+}
+
+#btn-nav {
+    display: none;
+}
+#btn-nav:checked ~ nav {
+    transform: translateX(0);
+}
+.btn-nav {
+    color: var(--main-color);
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    padding: 6.5px 15px;
+    transition: 0.2s ease;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-nav:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+nav {
+    top: 82px;
+}
+.content-subtitle {
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+
+    text-align: center;
+    margin-left: 2%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 62%;
+}
+#content {
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 62%;
+}
+h3 {
+    font-weight: lighter;
+}
+.foot {
+    display: flex;
+    background-color: lightslategray;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+}
+.y {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+.y:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#logotipo {
+    margin-left: 6%;
+    width: 7.9%;
+    margin-top: 1.4%;
+    margin-right: 0px;
+}
+#subtitle {
+    font-weight: bold;
+}
+#title-1 {
+    text-align: center;
+    margin-left: 2%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 62%;
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+}
+#ima {
+    background-color: black;
+    height: 365px;
+    width: 30%;
+    float: right;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+#ima1 {
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#content-1 {
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 10, 0.2);
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2rem;
+    width: auto;
+}
+h1 {
+    color: aliceblue;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    nav {
+        top: 120px;
+        height:fit-content;
+    }
+    label.btn-nav {
+        margin-top: 10%;
+        background-color: #107acc;
+        width: 20%;
+    }
+    #titulo-txt{
+        margin-left: 60%;
+    }
+    #logotipo {
+        margin-left:50%;
+        width: 40%;
+        margin-top:10%;
+    }
+    #title-1 {
+        width: auto;
+        margin-right: 2%;
+    }
+    #ima {
+        height: 119px;
+    }
+    #content{
+        width: auto;
+        margin-right: 2%;
+    }
+}
